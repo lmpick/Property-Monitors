@@ -1,5 +1,5 @@
 before_install:
   - travis_retry sudo add-apt-repository -y "deb http://snapshot.debian.org/archive/debian/20070730T000000Z/ lenny main"
   - travis_retry sudo apt-get update
-  - travis_retry sudo apt-get install gcc-3.3
+  - travis_retry sudo apt-get -y install gcc-3.3
   - gcc --version
