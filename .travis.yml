@@ -5,3 +5,6 @@ before_install:
   - travis_retry sudo apt-get update
   - travis_retry sudo apt-get -y --force-yes install gcc-3.3
   - gcc --version
+
+script:
+  - make
