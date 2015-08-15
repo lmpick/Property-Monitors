@@ -7,6 +7,8 @@ before_install:
   - sudo ln -s /usr/lib/x86_64-linux-gnu /usr/lib64
   - gcc --version
   - gcc-3.3 --version
+  - ls /
+  - find /lib/ -name libgcc*
   - find /usr/ -name libgcc*
   - sudo /sbin/ldconfig -p | grep libgcc
 
