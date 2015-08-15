@@ -10,6 +10,7 @@ before_install:
   - ls /
   - find /lib/ -name libgcc*
   - find /usr/ -name libgcc*
+  - sudo ln -s /lib/x86_64-linux-gnu/libgcc_s.so.1 /usr/lib/gcc-lib/x86_64-linux-gnu/3.3.6/libgcc_s.so
   - sudo /sbin/ldconfig -p | grep libgcc
 
 script:
