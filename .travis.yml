@@ -3,7 +3,7 @@ language: c
 before_install:
   - sudo add-apt-repository -y "deb http://snapshot.debian.org/archive/debian/20070730T000000Z/ lenny main"
   - sudo apt-get update
-  - sudo apt-get -y --force-yes install gcc-3.3 libgcc
+  - sudo apt-get -y --force-yes install gcc-3.3 libgcc1
   - sudo ln -s /usr/lib/x86_64-linux-gnu /usr/lib64
   - gcc --version
   - gcc-3.3 --version
